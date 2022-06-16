@@ -42,14 +42,18 @@ app.post("/save-book", (req, res) => {
             capa,
             nome,
             editora,
-            link
-        ) VALUES (?,?,?,?);
+            link,
+            autor,
+            num_pags
+        ) VALUES (?,?,?,?,?,?);
     `
     const values = [
         req.body.capa,
         req.body.nome,
         req.body.editora,
-        req.body.link
+        req.body.link,
+        req.body.autor,
+        req.doby.num_pags
     ]
 
     function afterInsertDate(err) {

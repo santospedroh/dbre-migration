@@ -41,6 +41,12 @@
                         <input type="text" class="form-control" id="inputlink" name="link" placeholder="Link ..." required>
                       </div>
                       <div class="form-group">
+                        <input type="text" class="form-control" id="inputautor" name="autor" placeholder="Autor ..." required>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="inputpags" name="pags" placeholder="Número de Páginas ..." required>
+                      </div>
+                      <div class="form-group">
                       <button type="submit" class="btn btn-primary">Salvar</button>
                       <a class="btn btn-warning" href="/search" role="button">Ver</a>
                       </div>    
@@ -59,7 +65,9 @@
                           <img class="card-img-top" src="{{ book.capa }}" alt="{{ book.capa }}" width="40%">
                           <div class="card-body">
                             <h5 class="card-title">{{ book.nome }}</h5>
-                            <p class="card-text">{{ book.editora }}</p>
+                            <h6 class="card-subtitle mb-2 text-muted">Autor: {{ book.autor }}</h6>
+                            <p class="card-text">Editora: {{ book.editora }}</p>
+                            <p class="card-text">Páginas: {{ book.num_pags }}</p>
                             <a href="{{ book.link }}" class="btn btn-primary" target="_blank">Detalhes</a>
                           </div>
                         </div>
