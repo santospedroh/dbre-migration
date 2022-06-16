@@ -50,4 +50,4 @@ Foi utilizado a biblioteca [mysql-migration](https://www.npmjs.com/package/mysql
 
 ---
 
-Made with ♥ by Pedro Santos :wave: [Get in touch!](https://www.linkedin.com/in/santospedroh/)
+Made with ♥ by Pedro Santos :wave: [Get in touch!](https://www.linkedin.com/in/santospedroh/)# dbre-migration
